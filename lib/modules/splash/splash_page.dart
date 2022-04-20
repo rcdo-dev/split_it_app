@@ -14,6 +14,13 @@ class SplashPage extends StatelessWidget {
         decoration: BoxDecoration(
           gradient: AppTheme.gradients.background,
         ),
+        child: Center(
+          child: Image.asset(
+            'assets/images/logo.png',
+            width: 128,
+            height: 112,
+          ),
+        ),
       ),
     );
   }
