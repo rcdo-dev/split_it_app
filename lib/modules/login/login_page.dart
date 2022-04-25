@@ -30,10 +30,13 @@ class _LoginPageState extends State<LoginPage> {
           ),
           Column(
             children: <Widget>[
-              const ListTile(
-                leading: Icon(Icons.sim_card),
+              ListTile(
+                leading: const Icon(Icons.sim_card),
                 title: Text(
                   'Faça seu login com uma das contas abaio',
+                  style: GoogleFonts.inter(
+                    fontSize: 16.0,
+                  ),
                 ),
               ),
               const SizedBox(
@@ -42,8 +45,11 @@ class _LoginPageState extends State<LoginPage> {
               ElevatedButton.icon(
                 onPressed: () {},
                 icon: const Icon(Icons.email),
-                label: const Text(
+                label: Text(
                   'Entrar com Google',
+                  style: GoogleFonts.inter(
+                    fontSize: 16.0,
+                  ),
                 ),
               ),
               const SizedBox(
@@ -52,8 +58,11 @@ class _LoginPageState extends State<LoginPage> {
               ElevatedButton.icon(
                 onPressed: () {},
                 icon: const Icon(Icons.email),
-                label: const Text(
+                label: Text(
                   'Entrar com Apple',
+                  style: GoogleFonts.inter(
+                    fontSize: 16.0,
+                  ),
                 ),
               ),
             ],
