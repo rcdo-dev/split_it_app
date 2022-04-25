@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:split_it_app/modules/login/login_page.dart';
 
 import '../modules/splash/splash_page.dart';
 
@@ -12,7 +13,7 @@ class AppWidget extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "Split.it",
-      home: SplashPage(),
+      home: LoginPage(),
     );
   }
 }
