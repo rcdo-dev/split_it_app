@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -14,8 +15,18 @@ class _LoginPageState extends State<LoginPage> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: <Widget>[
-          const Text(
-            'Divida suas contas com seus amigos',
+          Row(
+            children: [
+              SizedBox(
+                width: 236.0,
+                child: Text(
+                  'Divida suas contas com seus amigos',
+                  style: GoogleFonts.breeSerif(
+                    fontSize: 40.0,
+                  ),
+                ),
+              ),
+            ],
           ),
           Column(
             children: <Widget>[
