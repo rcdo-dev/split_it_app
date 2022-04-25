@@ -31,7 +31,9 @@ class _LoginPageState extends State<LoginPage> {
           Column(
             children: <Widget>[
               ListTile(
-                leading: const Icon(Icons.sim_card),
+                leading: Image.asset(
+                  'assets/images/emoji.png',
+                ),
                 title: Text(
                   'Faça seu login com uma das contas abaio',
                   style: GoogleFonts.inter(
@@ -44,7 +46,9 @@ class _LoginPageState extends State<LoginPage> {
               ),
               ElevatedButton.icon(
                 onPressed: () {},
-                icon: const Icon(Icons.email),
+                icon: Image.asset(
+                  'assets/images/google.png',
+                ),
                 label: Text(
                   'Entrar com Google',
                   style: GoogleFonts.inter(
@@ -57,7 +61,9 @@ class _LoginPageState extends State<LoginPage> {
               ),
               ElevatedButton.icon(
                 onPressed: () {},
-                icon: const Icon(Icons.email),
+                icon: Image.asset(
+                  'assets/images/apple.png',
+                ),
                 label: Text(
                   'Entrar com Apple',
                   style: GoogleFonts.inter(
