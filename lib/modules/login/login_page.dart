@@ -39,16 +39,19 @@ class _LoginPageState extends State<LoginPage> {
           ),
           Column(
             children: <Widget>[
-              ListTile(
-                leading: Image.asset(
-                  'assets/images/emoji.png',
-                ),
-                title: Text(
-                  'Faça seu login com uma das contas abaio',
-                  style: GoogleFonts.inter(
-                    color: AppTheme.colors.button,
-                    fontSize: 16.0,
-                    fontWeight: FontWeight.w400,
+              Padding(
+                padding: const EdgeInsets.only(left: 40.0),
+                child: ListTile(
+                  leading: Image.asset(
+                    'assets/images/emoji.png',
+                  ),
+                  title: Text(
+                    'Faça seu login com uma das contas abaio',
+                    style: GoogleFonts.inter(
+                      color: AppTheme.colors.button,
+                      fontSize: 16.0,
+                      fontWeight: FontWeight.w400,
+                    ),
                   ),
                 ),
               ),
