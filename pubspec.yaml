@@ -1,5 +1,6 @@
 name: split_it_app
 description: A new Flutter project.
+# Flutter: Channel stable, 2.10.4 | Dart: version 2.16.2.
 
 publish_to: 'none'
 
