@@ -27,11 +27,7 @@ class _LoginPageState extends State<LoginPage> {
                   width: 236.0,
                   child: Text(
                     'Divida suas contas com seus amigos',
-                    style: GoogleFonts.montserrat(
-                      color: AppTheme.colors.title,
-                      fontSize: 40.0,
-                      fontWeight: FontWeight.w700,
-                    ),
+                    style: AppTheme.textStyles.title,
                   ),
                 ),
               ],
@@ -47,11 +43,7 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                   title: Text(
                     'Faça seu login com uma das contas abaixo',
-                    style: GoogleFonts.inter(
-                      color: AppTheme.colors.button,
-                      fontSize: 16.0,
-                      fontWeight: FontWeight.w400,
-                    ),
+                    style: AppTheme.textStyles.button,
                   ),
                 ),
               ),
@@ -96,11 +88,7 @@ class _LoginPageState extends State<LoginPage> {
                       Expanded(child: Container()),
                       Text(
                         'Entrar com Google',
-                        style: GoogleFonts.inter(
-                          color: AppTheme.colors.button,
-                          fontSize: 16.0,
-                          fontWeight: FontWeight.w400,
-                        ),
+                        style: AppTheme.textStyles.button,
                       ),
                       Expanded(child: Container()),
                     ],
@@ -148,11 +136,7 @@ class _LoginPageState extends State<LoginPage> {
                       Expanded(child: Container()),
                       Text(
                         'Entrar com Apple',
-                        style: GoogleFonts.inter(
-                          color: AppTheme.colors.button,
-                          fontSize: 16.0,
-                          fontWeight: FontWeight.w400,
-                        ),
+                        style: AppTheme.textStyles.button,
                       ),
                       Expanded(child: Container()),
                     ],
