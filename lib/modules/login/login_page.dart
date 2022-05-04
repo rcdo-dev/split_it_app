@@ -107,62 +107,55 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 32.0),
-                child: ListTile(
-                  leading: Image.asset(
-                    'assets/images/google.png',
-                  ),
-                  title: Center(
-                    child: Text(
-                      'Entrar com Google',
-                      style: GoogleFonts.inter(
-                        color: AppTheme.colors.button,
-                        fontSize: 16.0,
-                        fontWeight: FontWeight.w400,
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-              ElevatedButton.icon(
-                onPressed: () {},
-                icon: Image.asset(
-                  'assets/images/google.png',
-                ),
-                style: ButtonStyle(
-                  backgroundColor: MaterialStateProperty.all(
-                    AppTheme.colors.backgroundPrimary,
-                  ),
-                ),
-                label: Text(
-                  'Entrar com Google',
-                  style: GoogleFonts.inter(
-                    color: AppTheme.colors.button,
-                    fontSize: 16.0,
-                    fontWeight: FontWeight.w400,
-                  ),
-                ),
-              ),
               const SizedBox(
                 height: 12.0,
               ),
-              ElevatedButton.icon(
-                onPressed: () {},
-                icon: Image.asset(
-                  'assets/images/apple.png',
-                ),
-                style: ButtonStyle(
-                  backgroundColor: MaterialStateProperty.all(
-                    AppTheme.colors.backgroundPrimary,
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 32.0),
+                child: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(5.0),
+                    border: Border.fromBorderSide(
+                      BorderSide(
+                        color: AppTheme.colors.button,
+                      ),
+                    ),
                   ),
-                ),
-                label: Text(
-                  'Entrar com Apple',
-                  style: GoogleFonts.inter(
-                    color: AppTheme.colors.button,
-                    fontSize: 16.0,
-                    fontWeight: FontWeight.w400,
+                  child: Row(
+                    children: <Widget>[
+                      SizedBox(
+                        width: 57.0,
+                        height: 57.0,
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            const SizedBox(
+                              width: 16.0,
+                            ),
+                            Image.asset(
+                              'assets/images/apple.png',
+                            ),
+                            const SizedBox(
+                              width: 16.0,
+                            ),
+                            Container(
+                              width: 1.0,
+                              color: AppTheme.colors.button,
+                            ),
+                          ],
+                        ),
+                      ),
+                      Expanded(child: Container()),
+                      Text(
+                        'Entrar com Apple',
+                        style: GoogleFonts.inter(
+                          color: AppTheme.colors.button,
+                          fontSize: 16.0,
+                          fontWeight: FontWeight.w400,
+                        ),
+                      ),
+                      Expanded(child: Container()),
+                    ],
                   ),
                 ),
               ),
