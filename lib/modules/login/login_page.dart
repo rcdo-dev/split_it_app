@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:split_it_app/modules/login/widgets/social_button.dart';
 import 'package:split_it_app/theme/app_theme.dart';
 
 class LoginPage extends StatefulWidget {
@@ -50,97 +50,21 @@ class _LoginPageState extends State<LoginPage> {
               const SizedBox(
                 height: 32.0,
               ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 32.0),
-                child: Container(
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(5.0),
-                    border: Border.fromBorderSide(
-                      BorderSide(
-                        color: AppTheme.colors.button,
-                      ),
-                    ),
-                  ),
-                  child: Row(
-                    children: <Widget>[
-                      SizedBox(
-                        width: 57.0,
-                        height: 57.0,
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            const SizedBox(
-                              width: 16.0,
-                            ),
-                            Image.asset(
-                              'assets/images/google.png',
-                            ),
-                            const SizedBox(
-                              width: 16.0,
-                            ),
-                            Container(
-                              width: 1.0,
-                              color: AppTheme.colors.button,
-                            ),
-                          ],
-                        ),
-                      ),
-                      Expanded(child: Container()),
-                      Text(
-                        'Entrar com Google',
-                        style: AppTheme.textStyles.button,
-                      ),
-                      Expanded(child: Container()),
-                    ],
-                  ),
+              const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 32.0),
+                child: SocialButtonWidget(
+                  imagePath: 'assets/images/google.png',
+                  label: 'Entrar com Google',
                 ),
               ),
               const SizedBox(
                 height: 12.0,
               ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 32.0),
-                child: Container(
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(5.0),
-                    border: Border.fromBorderSide(
-                      BorderSide(
-                        color: AppTheme.colors.button,
-                      ),
-                    ),
-                  ),
-                  child: Row(
-                    children: <Widget>[
-                      SizedBox(
-                        width: 57.0,
-                        height: 57.0,
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            const SizedBox(
-                              width: 16.0,
-                            ),
-                            Image.asset(
-                              'assets/images/apple.png',
-                            ),
-                            const SizedBox(
-                              width: 16.0,
-                            ),
-                            Container(
-                              width: 1.0,
-                              color: AppTheme.colors.button,
-                            ),
-                          ],
-                        ),
-                      ),
-                      Expanded(child: Container()),
-                      Text(
-                        'Entrar com Apple',
-                        style: AppTheme.textStyles.button,
-                      ),
-                      Expanded(child: Container()),
-                    ],
-                  ),
+              const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 32.0),
+                child: SocialButtonWidget(
+                  imagePath: 'assets/images/apple.png',
+                  label: 'Entrar com Apple',
                 ),
               ),
             ],
